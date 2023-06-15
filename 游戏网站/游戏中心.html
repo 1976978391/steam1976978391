@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>游戏中心</title>
+    <link rel="stylesheet" href="./游戏中心.css">
+    <link rel="stylesheet" href="./fa/css/all.css">
+</head>
+
+<body>
+    <!-- 创建外部容器 -->
+    <div class="app">
+        <div id="background" style="position: absolute;"><img style="width: 1720px;" src="./图片/背景.png"></div>
+        <!-- 创建内部容器 -->
+        <div id="content">
+            <!-- 创建头部导航栏 -->
+            <div id="header">
+                <div id="layout-header">
+                    <div id="left-layout-header">
+                        <div id="steam"><a href="#"><img src="./图片/steam-header.png"
+                                    style="position: absolute;left: -240px;top: 23px;"></a></div>
+                        <div id="left1"><a href="./首页.html">首页</a></div>
+                        <div id="left2"><a href="#">游戏中心</a></div>
+                        <div id="left3"><a href="#">会员中心</a></div>
+                    </div>
+                    <div id="right-layout-header">
+                        <div id="right1">
+                            <button id="downloadbtn"><img src="./图片/下载.png"
+                                    style="width: 20px;position: absolute;right: 195px;top: 25px;">下载客户端</button>
+                        </div>
+                        <div id="right2"><a href="#"><img src="./图片/headpicture.5730fa05716612d92a88.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 创建主内容容器 -->
+            <div id="ant-row">
+                <div id="search-template1">
+                    <div id="search-input">
+                        <input class="search-input-wrapper" type="text" placeholder="搜索你想要的游戏">
+                        <a href="#"><i class="fas fa-search"></i></a>
+                    </div>
+                    <div id="search-wrapper">
+                        <div id="search-wrapper-box">
+                            <div id="sort-item-active" style="color: #efea4b;">推荐</div>
+                            <div id="sort-item">价格排序</div>
+                            <div id="sort-item">上线日期</div>
+                            <div id="sort-item">玩家评分</div>
+                            <svg class="icon-list-2_svg__icon" viewBox="0 0 1024 1024"
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M258.233 86.657c18.193 0 33.574 6.328 46.26 18.955 12.627 12.656 18.955 28.081 18.955 46.274v110.933c0 18.179-6.328 33.604-18.955 46.26-12.686 12.656-28.066 18.984-46.26 18.984H147.271c-18.164 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.26V151.887c0-18.193 6.328-33.618 18.984-46.274 12.656-12.627 28.066-18.955 46.23-18.955h110.962v-.001zm307.603 0c18.163 0 33.589 6.328 46.229 18.955 12.672 12.656 18.984 28.081 18.984 46.274v110.933c0 18.179-6.313 33.604-18.984 46.26-12.641 12.656-28.066 18.984-46.229 18.984H452.911c-18.149 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.26V151.887c0-18.193 6.328-33.618 18.984-46.274 12.656-12.627 28.081-18.955 46.23-18.955h112.925v-.001zm303.677 0c18.193 0 33.617 6.328 46.26 18.955 12.656 12.656 18.984 28.081 18.984 46.274v110.933c0 18.179-6.328 33.604-18.984 46.26-12.643 12.656-28.066 18.984-46.26 18.984H756.616c-18.164 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.26V151.887c0-18.193 6.328-33.618 18.984-46.274 12.656-12.627 28.066-18.955 46.23-18.955h112.897v-.001zm-611.28 305.655c18.193 0 33.574 6.328 46.26 18.955 12.627 12.656 18.955 28.066 18.955 46.23v110.991c0 18.149-6.328 33.574-18.955 46.23-12.686 12.656-28.066 18.984-46.26 18.984H147.271c-18.164 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.23V457.497c0-18.164 6.328-33.574 18.984-46.23 12.656-12.627 28.066-18.955 46.23-18.955h110.962zm307.603 0c18.163 0 33.589 6.328 46.229 18.955 12.672 12.656 18.984 28.066 18.984 46.23v110.991c0 18.149-6.313 33.574-18.984 46.23-12.641 12.656-28.066 18.984-46.229 18.984H452.911c-18.149 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.23V457.497c0-18.164 6.328-33.574 18.984-46.23 12.656-12.627 28.081-18.955 46.23-18.955h112.925zm303.677 0c18.193 0 33.617 6.328 46.26 18.955 12.656 12.656 18.984 28.066 18.984 46.23v110.991c0 18.149-6.328 33.574-18.984 46.23-12.643 12.656-28.066 18.984-46.26 18.984H756.616c-18.164 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.23V457.497c0-18.164 6.328-33.574 18.984-46.23 12.656-12.627 28.066-18.955 46.23-18.955h112.897zm-611.28 305.639c18.193 0 33.574 6.328 46.26 18.97 12.627 12.671 18.955 28.052 18.955 46.245v110.962c0 18.149-6.328 33.574-18.955 46.23-12.686 12.656-28.066 18.984-46.26 18.984H147.271c-18.164 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.23V763.166c0-18.193 6.328-33.574 18.984-46.245 12.656-12.642 28.066-18.97 46.23-18.97h110.962zm307.603 0c18.163 0 33.589 6.328 46.229 18.97 12.672 12.671 18.984 28.052 18.984 46.245v110.962c0 18.149-6.313 33.574-18.984 46.23-12.641 12.656-28.066 18.984-46.229 18.984H452.911c-18.149 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.23V763.166c0-18.193 6.328-33.574 18.984-46.245 12.656-12.642 28.081-18.97 46.23-18.97h112.925zm303.677 0c18.193 0 33.617 6.328 46.26 18.97 12.656 12.671 18.984 28.052 18.984 46.245v110.962c0 18.149-6.328 33.574-18.984 46.23-12.643 12.656-28.066 18.984-46.26 18.984H756.616c-18.164 0-33.574-6.328-46.23-18.984s-18.984-28.081-18.984-46.23V763.166c0-18.193 6.328-33.574 18.984-46.245 12.656-12.642 28.066-18.97 46.23-18.97h112.897zm0 0"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <svg class="icon-list-1_svg__icon" viewBox="0 0 1024 1024"
+                                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M246.887 265.698c0 13.744-11.143 24.886-24.885 24.886H100.325c-13.743 0-24.885-11.142-24.885-24.885V146.142c0-13.744 11.143-24.884 24.885-24.884H222c13.744 0 24.885 11.142 24.885 24.884v119.556zM945.653 247.613c0 24.741-20.055 44.796-44.796 44.796H379.775c-24.741 0-44.796-20.055-44.796-44.796v-83.387c0-24.74 20.055-44.795 44.796-44.795h521.082c24.74 0 44.796 20.056 44.796 44.795v83.387zM246.887 569.306c0 13.744-11.143 24.885-24.885 24.885H100.325c-13.743.001-24.885-11.142-24.885-24.885V449.752c0-13.746 11.143-24.885 24.885-24.885H222c13.744 0 24.885 11.142 24.885 24.885v119.554zM945.653 551.223c0 24.74-20.055 44.796-44.796 44.796H379.775c-24.741 0-44.796-20.055-44.796-44.796v-83.387c0-24.74 20.055-44.795 44.796-44.795h521.082c24.74 0 44.796 20.055 44.796 44.795v83.387zM246.887 874.907c0 13.745-11.143 24.887-24.885 24.887H100.325c-13.743 0-24.885-11.142-24.885-24.887V755.353c0-13.744 11.143-24.886 24.885-24.886H222c13.744 0 24.885 11.143 24.885 24.886v119.554zM945.653 856.823c0 24.741-20.055 44.796-44.796 44.796H379.775c-24.741 0-44.796-20.055-44.796-44.796v-83.387c0-24.74 20.055-44.795 44.796-44.795h521.082c24.74 0 44.796 20.055 44.796 44.795v83.387z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="allgamelist">
+                        <div id="allgamelist-wrapper">
+                            <div id="gameitem-juediqiusheng">
+                                <img src="./图片/绝地求生-game.jpg" alt="">
+                                <div id="game-box">
+                                    <div class="title">
+                                        <i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong style="font-weight: bold; font-size: 16px;">绝地求生
+                                            豪华版</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 420px;"><img style="margin-right: 6px;"
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">动作
+                                            / 冒险 / 多人 / 射击</div>
+                                    </div>
+                                    <div class="meta" style="margin-top: 3px;">
+                                        <span class="meta-item"><svg class="meta-icon" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                    fill="#757575"></path>
+                                            </svg>2017-12-21</span><span class="meta-item"><svg
+                                                class="meta-icon meta-icon-1" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M451.854 95.981c.024-.064.048-.145.081-.145-.081-.064-.097 0-.081.145zM142.588 440.622c-.015.01-.03.021-.037.017.006.016.019.006.037-.017zM624.1 271.047c18.099 26.1 36.273 53.908 53.701 82.938 48.123 80.165 81.397 154.548 98.899 221.083 19.011 72.275 18.915 133.928-.286 183.249-1.084 2.765-2.359 5.178-3.896 7.375a100.05 100.05 0 0 0-4.926 7.781c-20.483 35.914-66.648 76.351-130.217 114.117a101.187 101.187 0 0 0-3.399 1.909l-1.71 1.001c-19.005-19.216-44.009-36.6-76.792-50.192a99.992 99.992 0 0 0-78.091.63c-8.574 3.613-16.861 7.614-24.646 11.898l-.265.146c-.376.206-.751.414-1.127.624-8.181 4.568-16.021 9.576-23.335 14.904a99.79 99.79 0 0 0-6.083 4.646 204.95 204.95 0 0 0-19.58 17.471 702.32 702.32 0 0 1-23.031-14.015c-.448-.285-.897-.565-1.349-.843a677.6 677.6 0 0 1-2.998-1.928 88.69 88.69 0 0 0-1.261-.835 625.201 625.201 0 0 1-5.654-3.719c-.41-.272-.819-.541-1.232-.808-47.882-32.044-82.945-65.299-99.881-94.999a100.03 100.03 0 0 0-4.971-7.847c-1.519-2.168-2.775-4.551-3.842-7.283-6.194-15.9-11.333-31.95-15.281-47.72-.11-.475-.225-.948-.343-1.421a348.667 348.667 0 0 1-2.245-9.659 166.43 166.43 0 0 0-.424-2.092 297.84 297.84 0 0 1-1.865-9.537l-.043-.239c-.072-.433-.176-1.041-.307-1.764a343.681 343.681 0 0 1-1.349-8.413c-.104-.762-.209-1.52-.318-2.281-.479-3.48-.801-6.051-1.042-8.299a90.698 90.698 0 0 0-.084-.751l-.044-.432-.072-.689a325.386 325.386 0 0 1-.767-8.341l-.009-.133c-.038-.57-.098-1.477-.188-2.589a320.224 320.224 0 0 1-.436-7.996l-.002-.074-.027-.892-.021-.582a272.385 272.385 0 0 1-.182-7.553v-1.932c-.007-2.944.021-5.52.086-7.873l.006-.224.041-1.62c.085-2.63.204-5.188.354-7.608.031-.488.057-.977.08-1.466.195-2.891.402-5.481.634-7.911l.021-.218.038-.41.061-.619c.247-2.568.546-5.22.916-8.104l.022-.176.094-.75c.365-2.773.753-5.403 1.157-7.822.075-.45.147-.901.216-1.353.702-4.162 1.622-8.758 2.877-14.37a225.414 225.414 0 0 1 1.004-4.248c.98-4.095 2.031-8.096 3.126-11.892l.032-.11c.256-.893.506-1.794.754-2.695l.11-.4c.534-1.775 1.258-3.969 2.097-6.507l.197-.595c.82-2.5 1.556-4.73 2.208-6.578.111-.298.226-.594.338-.892.295-.776.591-1.556.883-2.341l.051-.138a282.008 282.008 0 0 1 4.333-10.988c.26-.62.519-1.243.777-1.865.193-.466.382-.932.581-1.391l.056-.13c.349-.807.698-1.606 1.047-2.398a213.645 213.645 0 0 0 21.651 24.243c19.333 18.617 44.339 27.968 69.372 27.968 24.027 0 48.079-8.614 67.163-25.918 79.306-71.91 167.59-151.963 208.638-276.515M533.206.007c6.212 28.647 10.144 55.329 12.242 80.458-.115-.867-.189-1.702-.307-2.569 2.983 33.158 2.553 63.407-.651 91.353-.496 4.229-1 8.467-1.62 12.597-.098.668-.23 1.33-.33 1.99-20.503 130.632-104.734 208.479-194.253 289.646-23.411-22.543-37.247-55.049-37.238-102.811.083-21.742 2.999-46.622 9.186-75.154l-.207.141c.074-.354.132-.685.207-1.048 0 0-63.854 41.285-116.968 119.19-.009-.008-.017-.025-.017-.025-.182.264-.355.563-.545.827-3.403 5.022-6.766 10.16-10.053 15.48-.157.239-.298.495-.447.735a430.615 430.615 0 0 0-8.847 15.075 376.645 376.645 0 0 0-1.991 3.569c-2.883 5.253-5.716 10.605-8.434 16.116-.133.272-.281.537-.414.809a407.245 407.245 0 0 0-8.095 17.627c-.627 1.446-1.223 2.917-1.833 4.371a380.69 380.69 0 0 0-5.89 14.935c-.528 1.421-1.074 2.808-1.586 4.229-1.09 3.058-2.115 6.163-3.139 9.285-.025.066-.05.132-.066.198-1.049 3.172-2.098 6.345-3.064 9.582-.396 1.306-.744 2.66-1.123 3.982a368.612 368.612 0 0 0-4.296 16.331 316.228 316.228 0 0 0-1.338 5.69c-1.537 6.873-2.958 13.812-4.122 20.933 0 .05-.017.1-.017.148a329.55 329.55 0 0 0-1.727 11.696c-.032.266-.065.529-.099.794a352.944 352.944 0 0 0-1.272 11.283c-.05.43-.083.86-.124 1.298a391.231 391.231 0 0 0-.884 11.044c-.033.545-.066 1.106-.091 1.651a358.25 358.25 0 0 0-.504 10.922l-.05 1.949a366.226 366.226 0 0 0-.124 10.87v2.164c.033 3.618.115 7.253.256 10.912.025.769.042 1.545.083 2.313.157 3.659.363 7.344.62 11.044.074.793.115 1.57.173 2.362.281 3.733.636 7.492 1.024 11.268.083.784.157 1.553.248 2.33.413 3.849.917 7.723 1.454 11.614.107.734.207 1.462.306 2.197.578 3.989 1.23 8.028 1.933 12.076.124.645.214 1.289.338 1.933a392.635 392.635 0 0 0 2.495 12.771c.099.479.19.958.281 1.438a451.803 451.803 0 0 0 3.18 13.745c.05.231.1.454.157.677 4.874 19.627 11.234 39.84 19.346 60.657 4.097 10.499 9.186 19.866 15.101 28.309 69.223 121.396 265.021 200.978 265.021 200.978v-.008c-.676-.277-56.816-23.185-119.421-62.98 62.605 39.796 118.746 62.702 119.421 62.973l.033.016v-.033c.041.018.083.033.083.033 3.709-34.05 18.495-57.277 40.477-73.716-.017-.018-.042-.018-.058-.033.124-.083.256-.166.38-.256 4.436-3.296 9.161-6.32 14.15-9.104.264-.149.528-.29.793-.438 4.998-2.75 10.251-5.261 15.745-7.558.165-.066.314-.141.479-.207 39.089 16.208 66.787 42.806 72.065 91.312 0 0 .024-.016.033-.016v.016s42.739-17.38 95.334-48.258c-.066.066-.132.141-.198.215 60.062-35.23 133.085-88.123 170.05-152.935 5.906-8.442 10.995-17.81 15.102-28.309C987.665 491.696 579.58 48.843 537.014 3.807c.1.165.207.363.298.529a567.529 567.529 0 0 0-4.106-4.329zM319.172 956.829z"
+                                                    fill="#757575"></path>
+                                            </svg>164689</span>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-70%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ">
+                                                <span>￥</span>45.33
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>150</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-nba2k22">
+                                <img src="./图片/NBA2k22-game.jpg" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>NBA 2K22</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row"><span class="meta-item" style="margin-right: 10px;"><svg
+                                                class="meta-icon" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                    fill="#757575"></path>
+                                            </svg>2021-09-09</span>
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 250px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">模拟
+                                            / 体育 / 篮球 / 电竞</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="gameItem__StyledIconNew-sc-7i3e0b-16 fvaBHj">
+                                            <div class="icon-archive newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-save-bg_svg__a">
+                                                            <stop stop-color="#512880" offset="0%"></stop>
+                                                            <stop stop-color="#7037B2" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-save-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg> <span class="text">支持云存档</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-56%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ">
+                                                <span>￥</span>89.5
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>199</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-city">
+                                <img src="./图片/city-game.png" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>城市：天际线</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row"><span class="meta-item" style="margin-right: 10px;"><svg
+                                                class="meta-icon" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                    fill="#757575"></path>
+                                            </svg>2015-03-10</span>
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 250px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">策略
+                                            / 模拟 / 建造 / 城市营造</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="gameItem__StyledIconNew-sc-7i3e0b-16 fvaBHj">
+                                            <div class="icon-cloud-game newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-game-bg_svg__a">
+                                                            <stop stop-color="#2282B1" offset="0%"></stop>
+                                                            <stop stop-color="#37C2FE" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-game-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg><span class="text">支持云游戏</span></div>
+                                            <div class="icon-archive newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-save-bg_svg__a">
+                                                            <stop stop-color="#512880" offset="0%"></stop>
+                                                            <stop stop-color="#7037B2" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-save-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg> <span class="text">支持云存档</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-52%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>43
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>88</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-chaojirenlei">
+                                <img src="./图片/超级人类-game.png" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>超级人类/超击突破</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 420px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">多人
+                                            / 射击 / 大逃杀</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="meta" style="margin-top: 3px;"><span class="meta-item"><svg
+                                                    class="meta-icon meta-icon-1" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M451.854 95.981c.024-.064.048-.145.081-.145-.081-.064-.097 0-.081.145zM142.588 440.622c-.015.01-.03.021-.037.017.006.016.019.006.037-.017zM624.1 271.047c18.099 26.1 36.273 53.908 53.701 82.938 48.123 80.165 81.397 154.548 98.899 221.083 19.011 72.275 18.915 133.928-.286 183.249-1.084 2.765-2.359 5.178-3.896 7.375a100.05 100.05 0 0 0-4.926 7.781c-20.483 35.914-66.648 76.351-130.217 114.117a101.187 101.187 0 0 0-3.399 1.909l-1.71 1.001c-19.005-19.216-44.009-36.6-76.792-50.192a99.992 99.992 0 0 0-78.091.63c-8.574 3.613-16.861 7.614-24.646 11.898l-.265.146c-.376.206-.751.414-1.127.624-8.181 4.568-16.021 9.576-23.335 14.904a99.79 99.79 0 0 0-6.083 4.646 204.95 204.95 0 0 0-19.58 17.471 702.32 702.32 0 0 1-23.031-14.015c-.448-.285-.897-.565-1.349-.843a677.6 677.6 0 0 1-2.998-1.928 88.69 88.69 0 0 0-1.261-.835 625.201 625.201 0 0 1-5.654-3.719c-.41-.272-.819-.541-1.232-.808-47.882-32.044-82.945-65.299-99.881-94.999a100.03 100.03 0 0 0-4.971-7.847c-1.519-2.168-2.775-4.551-3.842-7.283-6.194-15.9-11.333-31.95-15.281-47.72-.11-.475-.225-.948-.343-1.421a348.667 348.667 0 0 1-2.245-9.659 166.43 166.43 0 0 0-.424-2.092 297.84 297.84 0 0 1-1.865-9.537l-.043-.239c-.072-.433-.176-1.041-.307-1.764a343.681 343.681 0 0 1-1.349-8.413c-.104-.762-.209-1.52-.318-2.281-.479-3.48-.801-6.051-1.042-8.299a90.698 90.698 0 0 0-.084-.751l-.044-.432-.072-.689a325.386 325.386 0 0 1-.767-8.341l-.009-.133c-.038-.57-.098-1.477-.188-2.589a320.224 320.224 0 0 1-.436-7.996l-.002-.074-.027-.892-.021-.582a272.385 272.385 0 0 1-.182-7.553v-1.932c-.007-2.944.021-5.52.086-7.873l.006-.224.041-1.62c.085-2.63.204-5.188.354-7.608.031-.488.057-.977.08-1.466.195-2.891.402-5.481.634-7.911l.021-.218.038-.41.061-.619c.247-2.568.546-5.22.916-8.104l.022-.176.094-.75c.365-2.773.753-5.403 1.157-7.822.075-.45.147-.901.216-1.353.702-4.162 1.622-8.758 2.877-14.37a225.414 225.414 0 0 1 1.004-4.248c.98-4.095 2.031-8.096 3.126-11.892l.032-.11c.256-.893.506-1.794.754-2.695l.11-.4c.534-1.775 1.258-3.969 2.097-6.507l.197-.595c.82-2.5 1.556-4.73 2.208-6.578.111-.298.226-.594.338-.892.295-.776.591-1.556.883-2.341l.051-.138a282.008 282.008 0 0 1 4.333-10.988c.26-.62.519-1.243.777-1.865.193-.466.382-.932.581-1.391l.056-.13c.349-.807.698-1.606 1.047-2.398a213.645 213.645 0 0 0 21.651 24.243c19.333 18.617 44.339 27.968 69.372 27.968 24.027 0 48.079-8.614 67.163-25.918 79.306-71.91 167.59-151.963 208.638-276.515M533.206.007c6.212 28.647 10.144 55.329 12.242 80.458-.115-.867-.189-1.702-.307-2.569 2.983 33.158 2.553 63.407-.651 91.353-.496 4.229-1 8.467-1.62 12.597-.098.668-.23 1.33-.33 1.99-20.503 130.632-104.734 208.479-194.253 289.646-23.411-22.543-37.247-55.049-37.238-102.811.083-21.742 2.999-46.622 9.186-75.154l-.207.141c.074-.354.132-.685.207-1.048 0 0-63.854 41.285-116.968 119.19-.009-.008-.017-.025-.017-.025-.182.264-.355.563-.545.827-3.403 5.022-6.766 10.16-10.053 15.48-.157.239-.298.495-.447.735a430.615 430.615 0 0 0-8.847 15.075 376.645 376.645 0 0 0-1.991 3.569c-2.883 5.253-5.716 10.605-8.434 16.116-.133.272-.281.537-.414.809a407.245 407.245 0 0 0-8.095 17.627c-.627 1.446-1.223 2.917-1.833 4.371a380.69 380.69 0 0 0-5.89 14.935c-.528 1.421-1.074 2.808-1.586 4.229-1.09 3.058-2.115 6.163-3.139 9.285-.025.066-.05.132-.066.198-1.049 3.172-2.098 6.345-3.064 9.582-.396 1.306-.744 2.66-1.123 3.982a368.612 368.612 0 0 0-4.296 16.331 316.228 316.228 0 0 0-1.338 5.69c-1.537 6.873-2.958 13.812-4.122 20.933 0 .05-.017.1-.017.148a329.55 329.55 0 0 0-1.727 11.696c-.032.266-.065.529-.099.794a352.944 352.944 0 0 0-1.272 11.283c-.05.43-.083.86-.124 1.298a391.231 391.231 0 0 0-.884 11.044c-.033.545-.066 1.106-.091 1.651a358.25 358.25 0 0 0-.504 10.922l-.05 1.949a366.226 366.226 0 0 0-.124 10.87v2.164c.033 3.618.115 7.253.256 10.912.025.769.042 1.545.083 2.313.157 3.659.363 7.344.62 11.044.074.793.115 1.57.173 2.362.281 3.733.636 7.492 1.024 11.268.083.784.157 1.553.248 2.33.413 3.849.917 7.723 1.454 11.614.107.734.207 1.462.306 2.197.578 3.989 1.23 8.028 1.933 12.076.124.645.214 1.289.338 1.933a392.635 392.635 0 0 0 2.495 12.771c.099.479.19.958.281 1.438a451.803 451.803 0 0 0 3.18 13.745c.05.231.1.454.157.677 4.874 19.627 11.234 39.84 19.346 60.657 4.097 10.499 9.186 19.866 15.101 28.309 69.223 121.396 265.021 200.978 265.021 200.978v-.008c-.676-.277-56.816-23.185-119.421-62.98 62.605 39.796 118.746 62.702 119.421 62.973l.033.016v-.033c.041.018.083.033.083.033 3.709-34.05 18.495-57.277 40.477-73.716-.017-.018-.042-.018-.058-.033.124-.083.256-.166.38-.256 4.436-3.296 9.161-6.32 14.15-9.104.264-.149.528-.29.793-.438 4.998-2.75 10.251-5.261 15.745-7.558.165-.066.314-.141.479-.207 39.089 16.208 66.787 42.806 72.065 91.312 0 0 .024-.016.033-.016v.016s42.739-17.38 95.334-48.258c-.066.066-.132.141-.198.215 60.062-35.23 133.085-88.123 170.05-152.935 5.906-8.442 10.995-17.81 15.102-28.309C987.665 491.696 579.58 48.843 537.014 3.807c.1.165.207.363.298.529a567.529 567.529 0 0 0-4.106-4.329zM319.172 956.829z"
+                                                        fill="#757575"></path>
+                                                </svg>29875</span></div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-89%</div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>22
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>199</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-shimingzhaohuan19">
+                                <img src="./图片/使命召唤18-game.png" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M2.24 0h11.2a2.24 2.24 0 0 1 2.24 2.24v11.2a2.24 2.24 0 0 1-2.24 2.24H2.24A2.24 2.24 0 0 1 0 13.44V2.24A2.24 2.24 0 0 1 2.24 0Zm9.856 5.624c.388-1.273.498-2.38.222-3.264v-.056c-.056-.055-.056-.166-.11-.166-.056 0-.056.056-.056.111v.055c.11.775-.166 1.881-.609 3.043-.94-.442-2.102-.774-3.374-.996-1.162-.166-2.213-.221-3.21-.166.111-.774.443-1.383.886-1.438.664-.166 1.383.277 2.047 1.106.11.056.221.056.387.056.332.055.664.11.996.221C8.058 1.696 6.343.368 5.07.866c-.995.277-1.438 1.66-1.383 3.485-1.272.277-2.268.775-2.876 1.494L.755 5.9C.7 5.956.7 5.956.7 6.011c.055.055.11 0 .11-.055h.056c.609-.443 1.66-.83 2.877-.94.11 1.05.387 2.212.83 3.484.442 1.107.94 2.103 1.493 2.933-.774.332-1.383.332-1.715-.056-.442-.498-.442-1.383-.11-2.379-.056-.11-.111-.22-.111-.332-.11-.331-.221-.663-.332-.94-1.438 2.324-1.715 4.426-.664 5.31.83.665 2.213.444 3.707-.552.885.94 1.77 1.604 2.655 1.825h.056c.055 0 .166.056.166-.055.055-.055-.056-.055-.056-.11h-.055c-.72-.277-1.494-1.052-2.268-2.048a13.356 13.356 0 0 0 2.545-2.49c.719-.884 1.327-1.825 1.715-2.765.608.498.94 1.05.774 1.494-.166.663-.94 1.106-1.936 1.272-.056.11-.166.166-.222.277-.22.276-.442.553-.663.774 2.655.11 4.647-.72 4.813-2.102.276-.996-.664-2.102-2.269-2.932Zm-2.268 2.71c-.94 1.162-2.102 2.158-3.153 2.767-.387-.609-.72-1.328-.996-2.047a11.858 11.858 0 0 1-.774-4.15c.719-.055 1.493.056 2.212.166 1.439.222 2.877.775 3.928 1.384-.332.608-.774 1.327-1.217 1.88Z"
+                                                        id="BlizzardGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>使命召唤18：先锋</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 420px;">多人 / 射击 / 战争</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="meta" style="margin-top: 3px;"><span class="meta-item"><svg
+                                                    class="meta-icon" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                        fill="#757575"></path>
+                                                </svg>2021-11-05</span><span class="meta-item"><svg
+                                                    class="meta-icon meta-icon-1" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M451.854 95.981c.024-.064.048-.145.081-.145-.081-.064-.097 0-.081.145zM142.588 440.622c-.015.01-.03.021-.037.017.006.016.019.006.037-.017zM624.1 271.047c18.099 26.1 36.273 53.908 53.701 82.938 48.123 80.165 81.397 154.548 98.899 221.083 19.011 72.275 18.915 133.928-.286 183.249-1.084 2.765-2.359 5.178-3.896 7.375a100.05 100.05 0 0 0-4.926 7.781c-20.483 35.914-66.648 76.351-130.217 114.117a101.187 101.187 0 0 0-3.399 1.909l-1.71 1.001c-19.005-19.216-44.009-36.6-76.792-50.192a99.992 99.992 0 0 0-78.091.63c-8.574 3.613-16.861 7.614-24.646 11.898l-.265.146c-.376.206-.751.414-1.127.624-8.181 4.568-16.021 9.576-23.335 14.904a99.79 99.79 0 0 0-6.083 4.646 204.95 204.95 0 0 0-19.58 17.471 702.32 702.32 0 0 1-23.031-14.015c-.448-.285-.897-.565-1.349-.843a677.6 677.6 0 0 1-2.998-1.928 88.69 88.69 0 0 0-1.261-.835 625.201 625.201 0 0 1-5.654-3.719c-.41-.272-.819-.541-1.232-.808-47.882-32.044-82.945-65.299-99.881-94.999a100.03 100.03 0 0 0-4.971-7.847c-1.519-2.168-2.775-4.551-3.842-7.283-6.194-15.9-11.333-31.95-15.281-47.72-.11-.475-.225-.948-.343-1.421a348.667 348.667 0 0 1-2.245-9.659 166.43 166.43 0 0 0-.424-2.092 297.84 297.84 0 0 1-1.865-9.537l-.043-.239c-.072-.433-.176-1.041-.307-1.764a343.681 343.681 0 0 1-1.349-8.413c-.104-.762-.209-1.52-.318-2.281-.479-3.48-.801-6.051-1.042-8.299a90.698 90.698 0 0 0-.084-.751l-.044-.432-.072-.689a325.386 325.386 0 0 1-.767-8.341l-.009-.133c-.038-.57-.098-1.477-.188-2.589a320.224 320.224 0 0 1-.436-7.996l-.002-.074-.027-.892-.021-.582a272.385 272.385 0 0 1-.182-7.553v-1.932c-.007-2.944.021-5.52.086-7.873l.006-.224.041-1.62c.085-2.63.204-5.188.354-7.608.031-.488.057-.977.08-1.466.195-2.891.402-5.481.634-7.911l.021-.218.038-.41.061-.619c.247-2.568.546-5.22.916-8.104l.022-.176.094-.75c.365-2.773.753-5.403 1.157-7.822.075-.45.147-.901.216-1.353.702-4.162 1.622-8.758 2.877-14.37a225.414 225.414 0 0 1 1.004-4.248c.98-4.095 2.031-8.096 3.126-11.892l.032-.11c.256-.893.506-1.794.754-2.695l.11-.4c.534-1.775 1.258-3.969 2.097-6.507l.197-.595c.82-2.5 1.556-4.73 2.208-6.578.111-.298.226-.594.338-.892.295-.776.591-1.556.883-2.341l.051-.138a282.008 282.008 0 0 1 4.333-10.988c.26-.62.519-1.243.777-1.865.193-.466.382-.932.581-1.391l.056-.13c.349-.807.698-1.606 1.047-2.398a213.645 213.645 0 0 0 21.651 24.243c19.333 18.617 44.339 27.968 69.372 27.968 24.027 0 48.079-8.614 67.163-25.918 79.306-71.91 167.59-151.963 208.638-276.515M533.206.007c6.212 28.647 10.144 55.329 12.242 80.458-.115-.867-.189-1.702-.307-2.569 2.983 33.158 2.553 63.407-.651 91.353-.496 4.229-1 8.467-1.62 12.597-.098.668-.23 1.33-.33 1.99-20.503 130.632-104.734 208.479-194.253 289.646-23.411-22.543-37.247-55.049-37.238-102.811.083-21.742 2.999-46.622 9.186-75.154l-.207.141c.074-.354.132-.685.207-1.048 0 0-63.854 41.285-116.968 119.19-.009-.008-.017-.025-.017-.025-.182.264-.355.563-.545.827-3.403 5.022-6.766 10.16-10.053 15.48-.157.239-.298.495-.447.735a430.615 430.615 0 0 0-8.847 15.075 376.645 376.645 0 0 0-1.991 3.569c-2.883 5.253-5.716 10.605-8.434 16.116-.133.272-.281.537-.414.809a407.245 407.245 0 0 0-8.095 17.627c-.627 1.446-1.223 2.917-1.833 4.371a380.69 380.69 0 0 0-5.89 14.935c-.528 1.421-1.074 2.808-1.586 4.229-1.09 3.058-2.115 6.163-3.139 9.285-.025.066-.05.132-.066.198-1.049 3.172-2.098 6.345-3.064 9.582-.396 1.306-.744 2.66-1.123 3.982a368.612 368.612 0 0 0-4.296 16.331 316.228 316.228 0 0 0-1.338 5.69c-1.537 6.873-2.958 13.812-4.122 20.933 0 .05-.017.1-.017.148a329.55 329.55 0 0 0-1.727 11.696c-.032.266-.065.529-.099.794a352.944 352.944 0 0 0-1.272 11.283c-.05.43-.083.86-.124 1.298a391.231 391.231 0 0 0-.884 11.044c-.033.545-.066 1.106-.091 1.651a358.25 358.25 0 0 0-.504 10.922l-.05 1.949a366.226 366.226 0 0 0-.124 10.87v2.164c.033 3.618.115 7.253.256 10.912.025.769.042 1.545.083 2.313.157 3.659.363 7.344.62 11.044.074.793.115 1.57.173 2.362.281 3.733.636 7.492 1.024 11.268.083.784.157 1.553.248 2.33.413 3.849.917 7.723 1.454 11.614.107.734.207 1.462.306 2.197.578 3.989 1.23 8.028 1.933 12.076.124.645.214 1.289.338 1.933a392.635 392.635 0 0 0 2.495 12.771c.099.479.19.958.281 1.438a451.803 451.803 0 0 0 3.18 13.745c.05.231.1.454.157.677 4.874 19.627 11.234 39.84 19.346 60.657 4.097 10.499 9.186 19.866 15.101 28.309 69.223 121.396 265.021 200.978 265.021 200.978v-.008c-.676-.277-56.816-23.185-119.421-62.98 62.605 39.796 118.746 62.702 119.421 62.973l.033.016v-.033c.041.018.083.033.083.033 3.709-34.05 18.495-57.277 40.477-73.716-.017-.018-.042-.018-.058-.033.124-.083.256-.166.38-.256 4.436-3.296 9.161-6.32 14.15-9.104.264-.149.528-.29.793-.438 4.998-2.75 10.251-5.261 15.745-7.558.165-.066.314-.141.479-.207 39.089 16.208 66.787 42.806 72.065 91.312 0 0 .024-.016.033-.016v.016s42.739-17.38 95.334-48.258c-.066.066-.132.141-.198.215 60.062-35.23 133.085-88.123 170.05-152.935 5.906-8.442 10.995-17.81 15.102-28.309C987.665 491.696 579.58 48.843 537.014 3.807c.1.165.207.363.298.529a567.529 567.529 0 0 0-4.106-4.329zM319.172 956.829z"
+                                                        fill="#757575"></path>
+                                                </svg>186581</span></div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-71%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>128
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>436</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-gta5">
+                                <img src="./图片/gta5-game.jpg" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>侠盗猎车手5（GTA5）</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row"><span class="meta-item" style="margin-right: 10px;"><svg
+                                                class="meta-icon" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                    fill="#757575"></path>
+                                            </svg>2015-04-14</span>
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 250px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">动作
+                                            / 多人 / 开放世界</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="gameItem__StyledIconNew-sc-7i3e0b-16 fvaBHj">
+                                            <div class="icon-cloud-game newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-game-bg_svg__a">
+                                                            <stop stop-color="#2282B1" offset="0%"></stop>
+                                                            <stop stop-color="#37C2FE" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-game-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg><span class="text">支持云游戏</span></div>
+                                            <div class="icon-archive newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-save-bg_svg__a">
+                                                            <stop stop-color="#512880" offset="0%"></stop>
+                                                            <stop stop-color="#7037B2" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-save-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg> <span class="text">支持云存档</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-64%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>43
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>119</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-tangdouren">
+                                <img src="./图片/糖豆人-game.png" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>糖豆人: 终极淘汰赛（S平台绝版）</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 420px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">多人
+                                            / 欢乐 / 放松 / 竞技</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="meta" style="margin-top: 3px;"><span class="meta-item"><svg
+                                                    class="meta-icon" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                        fill="#757575"></path>
+                                                </svg>2020-08-04</span><span class="meta-item"><svg
+                                                    class="meta-icon meta-icon-1" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M451.854 95.981c.024-.064.048-.145.081-.145-.081-.064-.097 0-.081.145zM142.588 440.622c-.015.01-.03.021-.037.017.006.016.019.006.037-.017zM624.1 271.047c18.099 26.1 36.273 53.908 53.701 82.938 48.123 80.165 81.397 154.548 98.899 221.083 19.011 72.275 18.915 133.928-.286 183.249-1.084 2.765-2.359 5.178-3.896 7.375a100.05 100.05 0 0 0-4.926 7.781c-20.483 35.914-66.648 76.351-130.217 114.117a101.187 101.187 0 0 0-3.399 1.909l-1.71 1.001c-19.005-19.216-44.009-36.6-76.792-50.192a99.992 99.992 0 0 0-78.091.63c-8.574 3.613-16.861 7.614-24.646 11.898l-.265.146c-.376.206-.751.414-1.127.624-8.181 4.568-16.021 9.576-23.335 14.904a99.79 99.79 0 0 0-6.083 4.646 204.95 204.95 0 0 0-19.58 17.471 702.32 702.32 0 0 1-23.031-14.015c-.448-.285-.897-.565-1.349-.843a677.6 677.6 0 0 1-2.998-1.928 88.69 88.69 0 0 0-1.261-.835 625.201 625.201 0 0 1-5.654-3.719c-.41-.272-.819-.541-1.232-.808-47.882-32.044-82.945-65.299-99.881-94.999a100.03 100.03 0 0 0-4.971-7.847c-1.519-2.168-2.775-4.551-3.842-7.283-6.194-15.9-11.333-31.95-15.281-47.72-.11-.475-.225-.948-.343-1.421a348.667 348.667 0 0 1-2.245-9.659 166.43 166.43 0 0 0-.424-2.092 297.84 297.84 0 0 1-1.865-9.537l-.043-.239c-.072-.433-.176-1.041-.307-1.764a343.681 343.681 0 0 1-1.349-8.413c-.104-.762-.209-1.52-.318-2.281-.479-3.48-.801-6.051-1.042-8.299a90.698 90.698 0 0 0-.084-.751l-.044-.432-.072-.689a325.386 325.386 0 0 1-.767-8.341l-.009-.133c-.038-.57-.098-1.477-.188-2.589a320.224 320.224 0 0 1-.436-7.996l-.002-.074-.027-.892-.021-.582a272.385 272.385 0 0 1-.182-7.553v-1.932c-.007-2.944.021-5.52.086-7.873l.006-.224.041-1.62c.085-2.63.204-5.188.354-7.608.031-.488.057-.977.08-1.466.195-2.891.402-5.481.634-7.911l.021-.218.038-.41.061-.619c.247-2.568.546-5.22.916-8.104l.022-.176.094-.75c.365-2.773.753-5.403 1.157-7.822.075-.45.147-.901.216-1.353.702-4.162 1.622-8.758 2.877-14.37a225.414 225.414 0 0 1 1.004-4.248c.98-4.095 2.031-8.096 3.126-11.892l.032-.11c.256-.893.506-1.794.754-2.695l.11-.4c.534-1.775 1.258-3.969 2.097-6.507l.197-.595c.82-2.5 1.556-4.73 2.208-6.578.111-.298.226-.594.338-.892.295-.776.591-1.556.883-2.341l.051-.138a282.008 282.008 0 0 1 4.333-10.988c.26-.62.519-1.243.777-1.865.193-.466.382-.932.581-1.391l.056-.13c.349-.807.698-1.606 1.047-2.398a213.645 213.645 0 0 0 21.651 24.243c19.333 18.617 44.339 27.968 69.372 27.968 24.027 0 48.079-8.614 67.163-25.918 79.306-71.91 167.59-151.963 208.638-276.515M533.206.007c6.212 28.647 10.144 55.329 12.242 80.458-.115-.867-.189-1.702-.307-2.569 2.983 33.158 2.553 63.407-.651 91.353-.496 4.229-1 8.467-1.62 12.597-.098.668-.23 1.33-.33 1.99-20.503 130.632-104.734 208.479-194.253 289.646-23.411-22.543-37.247-55.049-37.238-102.811.083-21.742 2.999-46.622 9.186-75.154l-.207.141c.074-.354.132-.685.207-1.048 0 0-63.854 41.285-116.968 119.19-.009-.008-.017-.025-.017-.025-.182.264-.355.563-.545.827-3.403 5.022-6.766 10.16-10.053 15.48-.157.239-.298.495-.447.735a430.615 430.615 0 0 0-8.847 15.075 376.645 376.645 0 0 0-1.991 3.569c-2.883 5.253-5.716 10.605-8.434 16.116-.133.272-.281.537-.414.809a407.245 407.245 0 0 0-8.095 17.627c-.627 1.446-1.223 2.917-1.833 4.371a380.69 380.69 0 0 0-5.89 14.935c-.528 1.421-1.074 2.808-1.586 4.229-1.09 3.058-2.115 6.163-3.139 9.285-.025.066-.05.132-.066.198-1.049 3.172-2.098 6.345-3.064 9.582-.396 1.306-.744 2.66-1.123 3.982a368.612 368.612 0 0 0-4.296 16.331 316.228 316.228 0 0 0-1.338 5.69c-1.537 6.873-2.958 13.812-4.122 20.933 0 .05-.017.1-.017.148a329.55 329.55 0 0 0-1.727 11.696c-.032.266-.065.529-.099.794a352.944 352.944 0 0 0-1.272 11.283c-.05.43-.083.86-.124 1.298a391.231 391.231 0 0 0-.884 11.044c-.033.545-.066 1.106-.091 1.651a358.25 358.25 0 0 0-.504 10.922l-.05 1.949a366.226 366.226 0 0 0-.124 10.87v2.164c.033 3.618.115 7.253.256 10.912.025.769.042 1.545.083 2.313.157 3.659.363 7.344.62 11.044.074.793.115 1.57.173 2.362.281 3.733.636 7.492 1.024 11.268.083.784.157 1.553.248 2.33.413 3.849.917 7.723 1.454 11.614.107.734.207 1.462.306 2.197.578 3.989 1.23 8.028 1.933 12.076.124.645.214 1.289.338 1.933a392.635 392.635 0 0 0 2.495 12.771c.099.479.19.958.281 1.438a451.803 451.803 0 0 0 3.18 13.745c.05.231.1.454.157.677 4.874 19.627 11.234 39.84 19.346 60.657 4.097 10.499 9.186 19.866 15.101 28.309 69.223 121.396 265.021 200.978 265.021 200.978v-.008c-.676-.277-56.816-23.185-119.421-62.98 62.605 39.796 118.746 62.702 119.421 62.973l.033.016v-.033c.041.018.083.033.083.033 3.709-34.05 18.495-57.277 40.477-73.716-.017-.018-.042-.018-.058-.033.124-.083.256-.166.38-.256 4.436-3.296 9.161-6.32 14.15-9.104.264-.149.528-.29.793-.438 4.998-2.75 10.251-5.261 15.745-7.558.165-.066.314-.141.479-.207 39.089 16.208 66.787 42.806 72.065 91.312 0 0 .024-.016.033-.016v.016s42.739-17.38 95.334-48.258c-.066.066-.132.141-.198.215 60.062-35.23 133.085-88.123 170.05-152.935 5.906-8.442 10.995-17.81 15.102-28.309C987.665 491.696 579.58 48.843 537.014 3.807c.1.165.207.363.298.529a567.529 567.529 0 0 0-4.106-4.329zM319.172 956.829z"
+                                                        fill="#757575"></path>
+                                                </svg>128624</span></div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-89%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>22
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>199</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-csgo">
+                                <img src="./图片/csgo-game.jpg" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>反恐精英:全球攻势(CS:GO国际版)</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row"><span class="meta-item" style="margin-right: 10px;"><svg
+                                                class="meta-icon" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                    fill="#757575"></path>
+                                            </svg>2012-08-22</span>
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 250px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">动作
+                                            / 多人 / 射击 / 第一人称</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="gameItem__StyledIconNew-sc-7i3e0b-16 fvaBHj">
+                                            <div class="icon-cloud-game newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-game-bg_svg__a">
+                                                            <stop stop-color="#2282B1" offset="0%"></stop>
+                                                            <stop stop-color="#37C2FE" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-game-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg><span class="text">支持云游戏</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-66%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>12
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>35</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-pubg">
+                                <img src="./图片/pubg-game.png" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>PUBG生存500级排位号</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 420px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">动作
+                                            / 冒险 / 多人 / 射击</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="meta" style="margin-top: 3px;"><span class="meta-item"><svg
+                                                    class="meta-icon" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                        fill="#757575"></path>
+                                                </svg>2017-12-21</span><span class="meta-item"><svg
+                                                    class="meta-icon meta-icon-1" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M451.854 95.981c.024-.064.048-.145.081-.145-.081-.064-.097 0-.081.145zM142.588 440.622c-.015.01-.03.021-.037.017.006.016.019.006.037-.017zM624.1 271.047c18.099 26.1 36.273 53.908 53.701 82.938 48.123 80.165 81.397 154.548 98.899 221.083 19.011 72.275 18.915 133.928-.286 183.249-1.084 2.765-2.359 5.178-3.896 7.375a100.05 100.05 0 0 0-4.926 7.781c-20.483 35.914-66.648 76.351-130.217 114.117a101.187 101.187 0 0 0-3.399 1.909l-1.71 1.001c-19.005-19.216-44.009-36.6-76.792-50.192a99.992 99.992 0 0 0-78.091.63c-8.574 3.613-16.861 7.614-24.646 11.898l-.265.146c-.376.206-.751.414-1.127.624-8.181 4.568-16.021 9.576-23.335 14.904a99.79 99.79 0 0 0-6.083 4.646 204.95 204.95 0 0 0-19.58 17.471 702.32 702.32 0 0 1-23.031-14.015c-.448-.285-.897-.565-1.349-.843a677.6 677.6 0 0 1-2.998-1.928 88.69 88.69 0 0 0-1.261-.835 625.201 625.201 0 0 1-5.654-3.719c-.41-.272-.819-.541-1.232-.808-47.882-32.044-82.945-65.299-99.881-94.999a100.03 100.03 0 0 0-4.971-7.847c-1.519-2.168-2.775-4.551-3.842-7.283-6.194-15.9-11.333-31.95-15.281-47.72-.11-.475-.225-.948-.343-1.421a348.667 348.667 0 0 1-2.245-9.659 166.43 166.43 0 0 0-.424-2.092 297.84 297.84 0 0 1-1.865-9.537l-.043-.239c-.072-.433-.176-1.041-.307-1.764a343.681 343.681 0 0 1-1.349-8.413c-.104-.762-.209-1.52-.318-2.281-.479-3.48-.801-6.051-1.042-8.299a90.698 90.698 0 0 0-.084-.751l-.044-.432-.072-.689a325.386 325.386 0 0 1-.767-8.341l-.009-.133c-.038-.57-.098-1.477-.188-2.589a320.224 320.224 0 0 1-.436-7.996l-.002-.074-.027-.892-.021-.582a272.385 272.385 0 0 1-.182-7.553v-1.932c-.007-2.944.021-5.52.086-7.873l.006-.224.041-1.62c.085-2.63.204-5.188.354-7.608.031-.488.057-.977.08-1.466.195-2.891.402-5.481.634-7.911l.021-.218.038-.41.061-.619c.247-2.568.546-5.22.916-8.104l.022-.176.094-.75c.365-2.773.753-5.403 1.157-7.822.075-.45.147-.901.216-1.353.702-4.162 1.622-8.758 2.877-14.37a225.414 225.414 0 0 1 1.004-4.248c.98-4.095 2.031-8.096 3.126-11.892l.032-.11c.256-.893.506-1.794.754-2.695l.11-.4c.534-1.775 1.258-3.969 2.097-6.507l.197-.595c.82-2.5 1.556-4.73 2.208-6.578.111-.298.226-.594.338-.892.295-.776.591-1.556.883-2.341l.051-.138a282.008 282.008 0 0 1 4.333-10.988c.26-.62.519-1.243.777-1.865.193-.466.382-.932.581-1.391l.056-.13c.349-.807.698-1.606 1.047-2.398a213.645 213.645 0 0 0 21.651 24.243c19.333 18.617 44.339 27.968 69.372 27.968 24.027 0 48.079-8.614 67.163-25.918 79.306-71.91 167.59-151.963 208.638-276.515M533.206.007c6.212 28.647 10.144 55.329 12.242 80.458-.115-.867-.189-1.702-.307-2.569 2.983 33.158 2.553 63.407-.651 91.353-.496 4.229-1 8.467-1.62 12.597-.098.668-.23 1.33-.33 1.99-20.503 130.632-104.734 208.479-194.253 289.646-23.411-22.543-37.247-55.049-37.238-102.811.083-21.742 2.999-46.622 9.186-75.154l-.207.141c.074-.354.132-.685.207-1.048 0 0-63.854 41.285-116.968 119.19-.009-.008-.017-.025-.017-.025-.182.264-.355.563-.545.827-3.403 5.022-6.766 10.16-10.053 15.48-.157.239-.298.495-.447.735a430.615 430.615 0 0 0-8.847 15.075 376.645 376.645 0 0 0-1.991 3.569c-2.883 5.253-5.716 10.605-8.434 16.116-.133.272-.281.537-.414.809a407.245 407.245 0 0 0-8.095 17.627c-.627 1.446-1.223 2.917-1.833 4.371a380.69 380.69 0 0 0-5.89 14.935c-.528 1.421-1.074 2.808-1.586 4.229-1.09 3.058-2.115 6.163-3.139 9.285-.025.066-.05.132-.066.198-1.049 3.172-2.098 6.345-3.064 9.582-.396 1.306-.744 2.66-1.123 3.982a368.612 368.612 0 0 0-4.296 16.331 316.228 316.228 0 0 0-1.338 5.69c-1.537 6.873-2.958 13.812-4.122 20.933 0 .05-.017.1-.017.148a329.55 329.55 0 0 0-1.727 11.696c-.032.266-.065.529-.099.794a352.944 352.944 0 0 0-1.272 11.283c-.05.43-.083.86-.124 1.298a391.231 391.231 0 0 0-.884 11.044c-.033.545-.066 1.106-.091 1.651a358.25 358.25 0 0 0-.504 10.922l-.05 1.949a366.226 366.226 0 0 0-.124 10.87v2.164c.033 3.618.115 7.253.256 10.912.025.769.042 1.545.083 2.313.157 3.659.363 7.344.62 11.044.074.793.115 1.57.173 2.362.281 3.733.636 7.492 1.024 11.268.083.784.157 1.553.248 2.33.413 3.849.917 7.723 1.454 11.614.107.734.207 1.462.306 2.197.578 3.989 1.23 8.028 1.933 12.076.124.645.214 1.289.338 1.933a392.635 392.635 0 0 0 2.495 12.771c.099.479.19.958.281 1.438a451.803 451.803 0 0 0 3.18 13.745c.05.231.1.454.157.677 4.874 19.627 11.234 39.84 19.346 60.657 4.097 10.499 9.186 19.866 15.101 28.309 69.223 121.396 265.021 200.978 265.021 200.978v-.008c-.676-.277-56.816-23.185-119.421-62.98 62.605 39.796 118.746 62.702 119.421 62.973l.033.016v-.033c.041.018.083.033.083.033 3.709-34.05 18.495-57.277 40.477-73.716-.017-.018-.042-.018-.058-.033.124-.083.256-.166.38-.256 4.436-3.296 9.161-6.32 14.15-9.104.264-.149.528-.29.793-.438 4.998-2.75 10.251-5.261 15.745-7.558.165-.066.314-.141.479-.207 39.089 16.208 66.787 42.806 72.065 91.312 0 0 .024-.016.033-.016v.016s42.739-17.38 95.334-48.258c-.066.066-.132.141-.198.215 60.062-35.23 133.085-88.123 170.05-152.935 5.906-8.442 10.995-17.81 15.102-28.309C987.665 491.696 579.58 48.843 537.014 3.807c.1.165.207.363.298.529a567.529 567.529 0 0 0-4.106-4.329zM319.172 956.829z"
+                                                        fill="#757575"></path>
+                                                </svg>154199</span></div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-30%</div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>602
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>860</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-diablo">
+                                <img src="./图片/Diablo-game.jpg" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M2.24 0h11.2a2.24 2.24 0 0 1 2.24 2.24v11.2a2.24 2.24 0 0 1-2.24 2.24H2.24A2.24 2.24 0 0 1 0 13.44V2.24A2.24 2.24 0 0 1 2.24 0Zm9.856 5.624c.388-1.273.498-2.38.222-3.264v-.056c-.056-.055-.056-.166-.11-.166-.056 0-.056.056-.056.111v.055c.11.775-.166 1.881-.609 3.043-.94-.442-2.102-.774-3.374-.996-1.162-.166-2.213-.221-3.21-.166.111-.774.443-1.383.886-1.438.664-.166 1.383.277 2.047 1.106.11.056.221.056.387.056.332.055.664.11.996.221C8.058 1.696 6.343.368 5.07.866c-.995.277-1.438 1.66-1.383 3.485-1.272.277-2.268.775-2.876 1.494L.755 5.9C.7 5.956.7 5.956.7 6.011c.055.055.11 0 .11-.055h.056c.609-.443 1.66-.83 2.877-.94.11 1.05.387 2.212.83 3.484.442 1.107.94 2.103 1.493 2.933-.774.332-1.383.332-1.715-.056-.442-.498-.442-1.383-.11-2.379-.056-.11-.111-.22-.111-.332-.11-.331-.221-.663-.332-.94-1.438 2.324-1.715 4.426-.664 5.31.83.665 2.213.444 3.707-.552.885.94 1.77 1.604 2.655 1.825h.056c.055 0 .166.056.166-.055.055-.055-.056-.055-.056-.11h-.055c-.72-.277-1.494-1.052-2.268-2.048a13.356 13.356 0 0 0 2.545-2.49c.719-.884 1.327-1.825 1.715-2.765.608.498.94 1.05.774 1.494-.166.663-.94 1.106-1.936 1.272-.056.11-.166.166-.222.277-.22.276-.442.553-.663.774 2.655.11 4.647-.72 4.813-2.102.276-.996-.664-2.102-2.269-2.932Zm-2.268 2.71c-.94 1.162-2.102 2.158-3.153 2.767-.387-.609-.72-1.328-.996-2.047a11.858 11.858 0 0 1-.774-4.15c.719-.055 1.493.056 2.212.166 1.439.222 2.877.775 3.928 1.384-.332.608-.774 1.327-1.217 1.88Z"
+                                                        id="BlizzardGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>暗黑破坏神2：狱火重生</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row"><span class="meta-item" style="margin-right: 10px;"><svg
+                                                class="meta-icon" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                    fill="#757575"></path>
+                                            </svg>2021-09-24</span>
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 250px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">冒险
+                                            / 角色扮演 / 多人</div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="gameItem__StyledIconNew-sc-7i3e0b-16 fvaBHj">
+                                            <div class="icon-archive newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-save-bg_svg__a">
+                                                            <stop stop-color="#512880" offset="0%"></stop>
+                                                            <stop stop-color="#7037B2" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-save-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg> <span class="text">支持云存档</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-58%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>128
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>299</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-shimingzhaohuan17">
+                                <img src="./图片/使命召唤17-game.png" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M2.24 0h11.2a2.24 2.24 0 0 1 2.24 2.24v11.2a2.24 2.24 0 0 1-2.24 2.24H2.24A2.24 2.24 0 0 1 0 13.44V2.24A2.24 2.24 0 0 1 2.24 0Zm9.856 5.624c.388-1.273.498-2.38.222-3.264v-.056c-.056-.055-.056-.166-.11-.166-.056 0-.056.056-.056.111v.055c.11.775-.166 1.881-.609 3.043-.94-.442-2.102-.774-3.374-.996-1.162-.166-2.213-.221-3.21-.166.111-.774.443-1.383.886-1.438.664-.166 1.383.277 2.047 1.106.11.056.221.056.387.056.332.055.664.11.996.221C8.058 1.696 6.343.368 5.07.866c-.995.277-1.438 1.66-1.383 3.485-1.272.277-2.268.775-2.876 1.494L.755 5.9C.7 5.956.7 5.956.7 6.011c.055.055.11 0 .11-.055h.056c.609-.443 1.66-.83 2.877-.94.11 1.05.387 2.212.83 3.484.442 1.107.94 2.103 1.493 2.933-.774.332-1.383.332-1.715-.056-.442-.498-.442-1.383-.11-2.379-.056-.11-.111-.22-.111-.332-.11-.331-.221-.663-.332-.94-1.438 2.324-1.715 4.426-.664 5.31.83.665 2.213.444 3.707-.552.885.94 1.77 1.604 2.655 1.825h.056c.055 0 .166.056.166-.055.055-.055-.056-.055-.056-.11h-.055c-.72-.277-1.494-1.052-2.268-2.048a13.356 13.356 0 0 0 2.545-2.49c.719-.884 1.327-1.825 1.715-2.765.608.498.94 1.05.774 1.494-.166.663-.94 1.106-1.936 1.272-.056.11-.166.166-.222.277-.22.276-.442.553-.663.774 2.655.11 4.647-.72 4.813-2.102.276-.996-.664-2.102-2.269-2.932Zm-2.268 2.71c-.94 1.162-2.102 2.158-3.153 2.767-.387-.609-.72-1.328-.996-2.047a11.858 11.858 0 0 1-.774-4.15c.719-.055 1.493.056 2.212.166 1.439.222 2.877.775 3.928 1.384-.332.608-.774 1.327-1.217 1.88Z"
+                                                        id="BlizzardGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>使命召唤17：黑色行动冷战</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row"></div>
+                                    <div class="meta">
+                                        <div class="meta" style="margin-top: 3px;"><span class="meta-item"><svg
+                                                    class="meta-icon" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                        fill="#757575"></path>
+                                                </svg>2020-11-13</span><span class="meta-item"><svg
+                                                    class="meta-icon meta-icon-1" viewBox="0 0 1024 1024"
+                                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                    <path
+                                                        d="M451.854 95.981c.024-.064.048-.145.081-.145-.081-.064-.097 0-.081.145zM142.588 440.622c-.015.01-.03.021-.037.017.006.016.019.006.037-.017zM624.1 271.047c18.099 26.1 36.273 53.908 53.701 82.938 48.123 80.165 81.397 154.548 98.899 221.083 19.011 72.275 18.915 133.928-.286 183.249-1.084 2.765-2.359 5.178-3.896 7.375a100.05 100.05 0 0 0-4.926 7.781c-20.483 35.914-66.648 76.351-130.217 114.117a101.187 101.187 0 0 0-3.399 1.909l-1.71 1.001c-19.005-19.216-44.009-36.6-76.792-50.192a99.992 99.992 0 0 0-78.091.63c-8.574 3.613-16.861 7.614-24.646 11.898l-.265.146c-.376.206-.751.414-1.127.624-8.181 4.568-16.021 9.576-23.335 14.904a99.79 99.79 0 0 0-6.083 4.646 204.95 204.95 0 0 0-19.58 17.471 702.32 702.32 0 0 1-23.031-14.015c-.448-.285-.897-.565-1.349-.843a677.6 677.6 0 0 1-2.998-1.928 88.69 88.69 0 0 0-1.261-.835 625.201 625.201 0 0 1-5.654-3.719c-.41-.272-.819-.541-1.232-.808-47.882-32.044-82.945-65.299-99.881-94.999a100.03 100.03 0 0 0-4.971-7.847c-1.519-2.168-2.775-4.551-3.842-7.283-6.194-15.9-11.333-31.95-15.281-47.72-.11-.475-.225-.948-.343-1.421a348.667 348.667 0 0 1-2.245-9.659 166.43 166.43 0 0 0-.424-2.092 297.84 297.84 0 0 1-1.865-9.537l-.043-.239c-.072-.433-.176-1.041-.307-1.764a343.681 343.681 0 0 1-1.349-8.413c-.104-.762-.209-1.52-.318-2.281-.479-3.48-.801-6.051-1.042-8.299a90.698 90.698 0 0 0-.084-.751l-.044-.432-.072-.689a325.386 325.386 0 0 1-.767-8.341l-.009-.133c-.038-.57-.098-1.477-.188-2.589a320.224 320.224 0 0 1-.436-7.996l-.002-.074-.027-.892-.021-.582a272.385 272.385 0 0 1-.182-7.553v-1.932c-.007-2.944.021-5.52.086-7.873l.006-.224.041-1.62c.085-2.63.204-5.188.354-7.608.031-.488.057-.977.08-1.466.195-2.891.402-5.481.634-7.911l.021-.218.038-.41.061-.619c.247-2.568.546-5.22.916-8.104l.022-.176.094-.75c.365-2.773.753-5.403 1.157-7.822.075-.45.147-.901.216-1.353.702-4.162 1.622-8.758 2.877-14.37a225.414 225.414 0 0 1 1.004-4.248c.98-4.095 2.031-8.096 3.126-11.892l.032-.11c.256-.893.506-1.794.754-2.695l.11-.4c.534-1.775 1.258-3.969 2.097-6.507l.197-.595c.82-2.5 1.556-4.73 2.208-6.578.111-.298.226-.594.338-.892.295-.776.591-1.556.883-2.341l.051-.138a282.008 282.008 0 0 1 4.333-10.988c.26-.62.519-1.243.777-1.865.193-.466.382-.932.581-1.391l.056-.13c.349-.807.698-1.606 1.047-2.398a213.645 213.645 0 0 0 21.651 24.243c19.333 18.617 44.339 27.968 69.372 27.968 24.027 0 48.079-8.614 67.163-25.918 79.306-71.91 167.59-151.963 208.638-276.515M533.206.007c6.212 28.647 10.144 55.329 12.242 80.458-.115-.867-.189-1.702-.307-2.569 2.983 33.158 2.553 63.407-.651 91.353-.496 4.229-1 8.467-1.62 12.597-.098.668-.23 1.33-.33 1.99-20.503 130.632-104.734 208.479-194.253 289.646-23.411-22.543-37.247-55.049-37.238-102.811.083-21.742 2.999-46.622 9.186-75.154l-.207.141c.074-.354.132-.685.207-1.048 0 0-63.854 41.285-116.968 119.19-.009-.008-.017-.025-.017-.025-.182.264-.355.563-.545.827-3.403 5.022-6.766 10.16-10.053 15.48-.157.239-.298.495-.447.735a430.615 430.615 0 0 0-8.847 15.075 376.645 376.645 0 0 0-1.991 3.569c-2.883 5.253-5.716 10.605-8.434 16.116-.133.272-.281.537-.414.809a407.245 407.245 0 0 0-8.095 17.627c-.627 1.446-1.223 2.917-1.833 4.371a380.69 380.69 0 0 0-5.89 14.935c-.528 1.421-1.074 2.808-1.586 4.229-1.09 3.058-2.115 6.163-3.139 9.285-.025.066-.05.132-.066.198-1.049 3.172-2.098 6.345-3.064 9.582-.396 1.306-.744 2.66-1.123 3.982a368.612 368.612 0 0 0-4.296 16.331 316.228 316.228 0 0 0-1.338 5.69c-1.537 6.873-2.958 13.812-4.122 20.933 0 .05-.017.1-.017.148a329.55 329.55 0 0 0-1.727 11.696c-.032.266-.065.529-.099.794a352.944 352.944 0 0 0-1.272 11.283c-.05.43-.083.86-.124 1.298a391.231 391.231 0 0 0-.884 11.044c-.033.545-.066 1.106-.091 1.651a358.25 358.25 0 0 0-.504 10.922l-.05 1.949a366.226 366.226 0 0 0-.124 10.87v2.164c.033 3.618.115 7.253.256 10.912.025.769.042 1.545.083 2.313.157 3.659.363 7.344.62 11.044.074.793.115 1.57.173 2.362.281 3.733.636 7.492 1.024 11.268.083.784.157 1.553.248 2.33.413 3.849.917 7.723 1.454 11.614.107.734.207 1.462.306 2.197.578 3.989 1.23 8.028 1.933 12.076.124.645.214 1.289.338 1.933a392.635 392.635 0 0 0 2.495 12.771c.099.479.19.958.281 1.438a451.803 451.803 0 0 0 3.18 13.745c.05.231.1.454.157.677 4.874 19.627 11.234 39.84 19.346 60.657 4.097 10.499 9.186 19.866 15.101 28.309 69.223 121.396 265.021 200.978 265.021 200.978v-.008c-.676-.277-56.816-23.185-119.421-62.98 62.605 39.796 118.746 62.702 119.421 62.973l.033.016v-.033c.041.018.083.033.083.033 3.709-34.05 18.495-57.277 40.477-73.716-.017-.018-.042-.018-.058-.033.124-.083.256-.166.38-.256 4.436-3.296 9.161-6.32 14.15-9.104.264-.149.528-.29.793-.438 4.998-2.75 10.251-5.261 15.745-7.558.165-.066.314-.141.479-.207 39.089 16.208 66.787 42.806 72.065 91.312 0 0 .024-.016.033-.016v.016s42.739-17.38 95.334-48.258c-.066.066-.132.141-.198.215 60.062-35.23 133.085-88.123 170.05-152.935 5.906-8.442 10.995-17.81 15.102-28.309C987.665 491.696 579.58 48.843 537.014 3.807c.1.165.207.363.298.529a567.529 567.529 0 0 0-4.106-4.329zM319.172 956.829z"
+                                                        fill="#757575"></path>
+                                                </svg>1395</span></div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-60%</div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>169
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>420</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="gameitem-elden">
+                                <img src="./图片/elden-game.jpg" alt="">
+                                <div id="game-box">
+                                    <div class="title"><i class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <path
+                                                        d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                        id="SteamGameIcon_svg__a"></path>
+                                                </defs>
+                                                <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                    <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                    <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                </g>
+                                            </svg></i><strong>艾尔登法环</strong><span><span
+                                                class="account-tag__StyledAccountTag-sc-schml2-0 jqGMfO account-tag new-account-tag">账号</span></span>
+                                    </div>
+                                    <div class="row"><span class="meta-item" style="margin-right: 10px;"><svg
+                                                class="meta-icon" viewBox="0 0 1024 1024"
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+                                                <path
+                                                    d="M768 128h170.667A85.333 85.333 0 0 1 1024 213.333v725.334A85.333 85.333 0 0 1 938.667 1024H85.333A85.333 85.333 0 0 1 0 938.667V213.333A85.333 85.333 0 0 1 85.333 128H256V42.667a42.667 42.667 0 1 1 85.333 0V128h341.334V42.667a42.667 42.667 0 0 1 85.333 0V128zm0 85.333v85.334a42.667 42.667 0 0 1-85.333 0v-85.334H341.333v85.334a42.667 42.667 0 1 1-85.333 0v-85.334H85.333v725.334h853.334V213.333H768zM85.333 512h853.334v85.333H85.333V512z"
+                                                    fill="#757575"></path>
+                                            </svg>2022-02-25</span>
+                                        <div class="gameItem__StyleTagsNew-sc-7i3e0b-3 eWgQqt"
+                                            style="margin-top: 0px; max-width: 250px;"><img
+                                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAAAXNSR0IArs4c6QAAAWpJREFUKFN10jtLA0EQB/D/5C4gSXHpI5LK1i9h4aOxOUSxsgj4QAhkN2oh297NFkIwjbWiFjYWooV+Awt7QVBPS9E7YiEZOUlCntsszPBjHgxhxNNabwPYF5EfIqL0B/AtInfW2l0aNG3gt1qtBWttkuaNMRNJkhQBXDLzTB9SSm0BWE6SZKHRaMTVanXWcZxsEATXvu87pVLpiZlLXaS13gSwksvl5o0xsdZ6SUT2ASQicmytPVVKvTLz5D+q1WobIrIGYC4Mw+80ppRaJ6JFEfkE8MDMR0qpF2aeIqXUBhGtNZvN+Xq9/tWZ0RjjxnG8Q0RuPp8/jKJIPM97FpFp0lo/AgjCMDwZtck0Vi6Xs4VC4UJE3ph5myqVStF13ZtMJrMXBMHVIEyB53nnAKIUpPn/mcbBdoUzEXnvgC4aBdsznRNRH+hDvZCIDkRkFcBHb4VO60MX0W71HsDtKDBUqXfdxpjfcdv8A3AlsnaMoSPDAAAAAElFTkSuQmCC">PC版游戏
+                                        </div>
+                                    </div>
+                                    <div class="meta">
+                                        <div class="gameItem__StyledIconNew-sc-7i3e0b-16 fvaBHj">
+                                            <div class="icon-cloud-game newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-game-bg_svg__a">
+                                                            <stop stop-color="#2282B1" offset="0%"></stop>
+                                                            <stop stop-color="#37C2FE" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-game-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg><span class="text">支持云游戏</span></div>
+                                            <div class="icon-archive newTag"><svg width="81" height="20"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <defs>
+                                                        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%"
+                                                            id="cloud-save-bg_svg__a">
+                                                            <stop stop-color="#512880" offset="0%"></stop>
+                                                            <stop stop-color="#7037B2" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M4 0h77l-4 20H0z" fill="url(#cloud-save-bg_svg__a)"
+                                                        fill-rule="evenodd"></path>
+                                                </svg> <span class="text">支持云存档</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="gamePrice">
+                                    <div class="gameItem__StyledRight-sc-7i3e0b-7 eUWEkn">
+                                        <div class="gameItem__StyledGameDiscount-sc-7i3e0b-13 DFub"
+                                            style="bottom: -5px;">-71%<div
+                                                class="gameItem__StyledVipTagNew-sc-7i3e0b-8 jPpGkh"><img
+                                                    src="https://static-ssr-v2.99box.com/static/assets/vip-free.2c575e556da93dbc4755.png">
+                                            </div>
+                                        </div>
+                                        <div class="gameItem__StyledPriceBox-sc-7i3e0b-6 jfrmOO">
+                                            <div class="gameItem__StyledGamePrice-sc-7i3e0b-14 kuqTrQ"><span>￥</span>118
+                                            </div>
+                                            <div class="gameItem__StyledGameSourcePrice-sc-7i3e0b-12 cwHFPw">
+                                                原价:<span>￥</span>398</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="search-pagination">
+                            <ul class="ant-pagination search-pagination__StyledPagination-sc-7gmgm4-1 fWVlFe"
+                                unselectable="unselectable">
+                                <li title="上一页" class="ant-pagination-prev ant-pagination-disabled"
+                                    aria-disabled="true">
+                                    <div disabled=""
+                                        class="search-pagination__StyledCustomPaginationBtn-sc-7gmgm4-0 kOndoI"><svg
+                                            width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="currentColor" fill-rule="nonzero">
+                                                <path
+                                                    d="M2.092 8h12.816C15.51 8 16 7.552 16 7s-.49-1-1.092-1H2.092C1.49 6 1 6.448 1 7s.49 1 1.092 1Z">
+                                                </path>
+                                                <path
+                                                    d="m1.642 6.67 4.077-4.756a1.258 1.258 0 0 0 0-1.586c-.375-.437-.984-.437-1.36 0L.282 5.085a1.258 1.258 0 0 0 0 1.585c.377.44.984.44 1.361 0Z">
+                                                </path>
+                                                <path
+                                                    d="M5.719 10.086 1.64 5.328c-.375-.437-.985-.437-1.36 0a1.259 1.259 0 0 0 0 1.586l4.078 4.758c.375.437.985.437 1.36 0a1.259 1.259 0 0 0 0-1.586Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </li>
+                                <li title="1"
+                                    class="ant-pagination-item ant-pagination-item-1 ant-pagination-item-active"
+                                    tabindex="0"><a rel="nofollow">1</a></li>
+                                <li title="2" class="ant-pagination-item ant-pagination-item-2" tabindex="0"><a
+                                        rel="nofollow">2</a></li>
+                                <li title="3" class="ant-pagination-item ant-pagination-item-3" tabindex="0"><a
+                                        rel="nofollow">3</a></li>
+                                <li title="4" class="ant-pagination-item ant-pagination-item-4" tabindex="0"><a
+                                        rel="nofollow">4</a></li>
+                                <li title="5"
+                                    class="ant-pagination-item ant-pagination-item-5 ant-pagination-item-before-jump-next"
+                                    tabindex="0"><a rel="nofollow">5</a></li>
+                                <li title="向后 5 页" tabindex="0"
+                                    class="ant-pagination-jump-next ant-pagination-jump-next-custom-icon"><a
+                                        class="ant-pagination-item-link">
+                                        <div class="ant-pagination-item-container"><span role="img"
+                                                aria-label="double-right"
+                                                class="anticon anticon-double-right ant-pagination-item-link-icon"><svg
+                                                    viewBox="64 64 896 896" focusable="false" data-icon="double-right"
+                                                    width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                                                    <path
+                                                        d="M533.2 492.3L277.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H188c-6.7 0-10.4 7.7-6.3 12.9L447.1 512 181.7 851.1A7.98 7.98 0 00188 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5zm304 0L581.9 166.1c-3-3.9-7.7-6.1-12.6-6.1H492c-6.7 0-10.4 7.7-6.3 12.9L751.1 512 485.7 851.1A7.98 7.98 0 00492 864h77.3c4.9 0 9.6-2.3 12.6-6.1l255.3-326.1c9.1-11.7 9.1-27.9 0-39.5z">
+                                                    </path>
+                                                </svg></span><span class="ant-pagination-item-ellipsis">•••</span></div>
+                                    </a></li>
+                                <li title="260" class="ant-pagination-item ant-pagination-item-260" tabindex="0"><a
+                                        rel="nofollow">260</a></li>
+                                <li title="下一页" tabindex="0" class="ant-pagination-next" aria-disabled="false">
+                                    <div class="search-pagination__StyledCustomPaginationBtn-sc-7gmgm4-0 kOndoI"><svg
+                                            width="16" height="12" xmlns="http://www.w3.org/2000/svg">
+                                            <g fill="currentColor" fill-rule="nonzero">
+                                                <path
+                                                    d="M13.908 8H1.092C.49 8 0 7.552 0 7s.49-1 1.092-1h12.816C14.51 6 15 6.448 15 7s-.49 1-1.092 1Z">
+                                                </path>
+                                                <path
+                                                    d="m14.358 6.67-4.077-4.756a1.258 1.258 0 0 1 0-1.586c.375-.437.984-.437 1.36 0l4.078 4.757a1.258 1.258 0 0 1 0 1.585c-.377.44-.984.44-1.361 0Z">
+                                                </path>
+                                                <path
+                                                    d="m10.281 10.086 4.078-4.758c.375-.437.985-.437 1.36 0a1.259 1.259 0 0 1 0 1.586l-4.078 4.758c-.375.437-.985.437-1.36 0a1.259 1.259 0 0 1 0-1.586Z">
+                                                </path>
+                                            </g>
+                                        </svg></div>
+                                </li>
+                                <li class="ant-pagination-options">
+                                    <div class="ant-pagination-options-quick-jumper">跳至<input type="text" value="">页
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="search-template2">
+                    <div id="search-styledfilterbox1">
+                        <div class="search-template2__StyledFilterBox-sc-14lkwi9-5 kCxJVE">
+                            <div class="box-title">特征类型</div>
+                            <div class="tag-box">
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">会员免费<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">最新上架<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">支持云存档<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">支持云游戏<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">支持VR<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">史低<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg><svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"
+                                        class="hot-icon">
+                                        <defs>
+                                            <linearGradient x1="50%" y1="1.842%" x2="50%" y2="100%" id="huobao_svg__a">
+                                                <stop stop-color="#FF3131" offset="0%"></stop>
+                                                <stop stop-color="#FF4848" stop-opacity="0" offset="100%"></stop>
+                                            </linearGradient>
+                                        </defs>
+                                        <path
+                                            d="m9.548 5.692.234.366a.268.268 0 0 0 .495-.054l.144-.426c.248-.623.585-1.18.988-1.647l.019-.035.01.001c.233-.264.488-.498.761-.698v-.004a.824.824 0 0 0 .315-.768 1.022 1.022 0 0 1 .098 1.126 7.268 7.268 0 0 0-.413 2.437c0 .47.145 1.293.467 1.864.453.6.708 1.28.708 2.002 0 2.424-2.886 4.39-6.446 4.39-3.266 0-5.965-1.655-6.388-3.8l-.016.023c-.1-.496-.15-1-.15-1.504 0-2.705 1.406-4.992 3.339-5.746-.583.966-.94 2.163-.973 3.464a.956.956 0 0 0 1.025.872c.886-.004 1.335-.612 1.346-1.823a5.317 5.317 0 0 1-.01-.317c0-2.452 1.686-4.52 3.992-5.17a5.257 5.257 0 0 0 .455 5.447Z"
+                                            transform="scale(-1 1) rotate(-23 -.5 44.364)" fill="url(#huobao_svg__a)"
+                                            fill-rule="nonzero"></path>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search-styledfilterbox2">
+                        <div class="search-template2__StyledFilterBox-sc-14lkwi9-5 kCxJVE">
+                            <div class="box-title">游戏类型</div>
+                            <div class="tag-box">
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">恐怖<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">生存<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">独立<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">动作<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">冒险<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">角色扮演<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">策略<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">休闲<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">多人<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">模拟<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search-styledfilterbox3">
+                        <div class="search-template2__StyledFilterBox-sc-14lkwi9-5 kCxJVE">
+                            <div class="box-title">游戏平台</div>
+                            <div class="tag-box">
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI platform">
+                                    <div class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M4.654 12.801a1.285 1.285 0 0 0 .715-2.356L4.357 9.77a2.064 2.064 0 0 1 2.606 1.99 2.062 2.062 0 0 1-4.123.09l1.101.735c.22.146.468.216.713.216ZM13.067 0a2.621 2.621 0 0 1 2.613 2.614v10.452a2.62 2.62 0 0 1-2.613 2.614H2.614A2.62 2.62 0 0 1 0 13.066V9.958l1.858 1.238a3.094 3.094 0 1 0 6.088.023l3.814-3.414A3.43 3.43 0 1 0 7.875 3.92L4.741 8.67c-.488.025-.97.165-1.405.42L0 6.866V2.614A2.621 2.621 0 0 1 2.614 0h10.453Zm.653 4.41a2.45 2.45 0 1 0-4.9 0 2.45 2.45 0 0 0 4.9 0Zm-3.92 0a1.47 1.47 0 1 1 2.94 0 1.47 1.47 0 0 1-2.94 0Z"
+                                                    id="SteamGameIcon_svg__a"></path>
+                                            </defs>
+                                            <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                <use fill="#3B3B3B" xlink:href="#SteamGameIcon_svg__a"></use>
+                                                <use fill="#757575" xlink:href="#SteamGameIcon_svg__a"></use>
+                                            </g>
+                                        </svg></div>Steam<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                        class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI platform">
+                                    <div class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M2.286 1h11.428A2.285 2.285 0 0 1 16 3.286v11.428A2.285 2.285 0 0 1 13.714 17H2.286A2.285 2.285 0 0 1 0 14.714V3.286A2.285 2.285 0 0 1 2.286 1Zm7.832 2.286H6.286v11.428h3.832V13.37H7.832V9.672h2.218V8.126H7.832V4.63l2.286-.067V3.286Z"
+                                                    id="EpicGameIcon_svg__a"></path>
+                                            </defs>
+                                            <g transform="translate(0 -1)" fill-rule="nonzero" fill="none">
+                                                <use fill="#3B3B3B" xlink:href="#EpicGameIcon_svg__a"></use>
+                                                <use fill="#757575" xlink:href="#EpicGameIcon_svg__a"></use>
+                                            </g>
+                                        </svg></div>Epic<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                        class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI platform">
+                                    <div class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M13.247 0a2.408 2.408 0 0 1 2.408 2.408v10.84a2.408 2.408 0 0 1-2.408 2.407H2.408A2.408 2.408 0 0 1 0 13.247V2.408A2.408 2.408 0 0 1 2.408 0h10.84ZM9.52 2.468c-3.33 0-6.04 2.966-6.04 6.608 0 3.224 4.023 5.193 6.208 5.193 2.288 0 4.847-2.692 4.847-6.3 0-3.488-3.805-5.5-5.015-5.5Zm-2.228 3.75v3.086c0 .222.18.402.404.402h2.414c.223 0 .403-.18.403-.402V6.217h1.343v4.832h-4.16A1.75 1.75 0 0 1 5.95 9.304V6.217h1.342ZM3.155 1.654c-1.163 0-2.035.952-2.035 2.213 0 1.148 1.18 1.678 1.975 1.678.825 0 2.047-.555 2.047-2.105 0-1.41-1.3-1.786-1.987-1.786Zm3.198-.537a.94.94 0 1 0 0 1.88.94.94 0 0 0 0-1.88Z"
+                                                    id="UplayGameIcon_svg__a"></path>
+                                            </defs>
+                                            <g fill-rule="nonzero" fill="none">
+                                                <use fill="#3B3B3B" xlink:href="#UplayGameIcon_svg__a"></use>
+                                                <use fill="#757575" xlink:href="#UplayGameIcon_svg__a"></use>
+                                            </g>
+                                        </svg></div>Uplay<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                        class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI platform">
+                                    <div class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M138.286 67.5h11.428A2.285 2.285 0 0 1 152 69.786v11.428a2.285 2.285 0 0 1-2.286 2.286h-11.428A2.285 2.285 0 0 1 136 81.214V69.786a2.285 2.285 0 0 1 2.286-2.286Zm5.458 1.161a10.578 10.578 0 0 0-4.242 4.349 5.103 5.103 0 0 0-.644 2.43c-.017.924.23 1.85.7 2.644a5.108 5.108 0 0 0 4.922 2.496c.045-.002.097-.015.128.027.008.093-.017.183-.037.274a3.35 3.35 0 0 1-.539 1.21c-.05.06-.07.15-.02.216.042.062.132.06.194.03a10.62 10.62 0 0 0 4.433-4.74 5.099 5.099 0 0 0-1.046-5.704 5.097 5.097 0 0 0-2.588-1.393 5.562 5.562 0 0 0-1.635-.077.935.935 0 0 1-.08-.026c-.017-.052 0-.108.053-.13.088-.478.274-.94.554-1.336.04-.056.088-.121.06-.193-.026-.087-.136-.12-.213-.077Zm-.051 4.864a1.994 1.994 0 0 1 1.477.38 1.992 1.992 0 0 1-.121 3.273 1.992 1.992 0 0 1-2.528-.309 1.96 1.96 0 0 1-.545-1.399 1.953 1.953 0 0 1 .336-1.08c.31-.465.824-.79 1.38-.865Z"
+                                                    id="OriginGameIcon_svg__a"></path>
+                                            </defs>
+                                            <g transform="translate(-136 -67)" fill-rule="nonzero" fill="none">
+                                                <use fill="#3B3B3B" xlink:href="#OriginGameIcon_svg__a"></use>
+                                                <use fill="#757575" xlink:href="#OriginGameIcon_svg__a"></use>
+                                            </g>
+                                        </svg></div>Origin<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                        class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI platform">
+                                    <div class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M2.24 0h11.2a2.24 2.24 0 0 1 2.24 2.24v11.2a2.24 2.24 0 0 1-2.24 2.24H2.24A2.24 2.24 0 0 1 0 13.44V2.24A2.24 2.24 0 0 1 2.24 0Zm9.856 5.624c.388-1.273.498-2.38.222-3.264v-.056c-.056-.055-.056-.166-.11-.166-.056 0-.056.056-.056.111v.055c.11.775-.166 1.881-.609 3.043-.94-.442-2.102-.774-3.374-.996-1.162-.166-2.213-.221-3.21-.166.111-.774.443-1.383.886-1.438.664-.166 1.383.277 2.047 1.106.11.056.221.056.387.056.332.055.664.11.996.221C8.058 1.696 6.343.368 5.07.866c-.995.277-1.438 1.66-1.383 3.485-1.272.277-2.268.775-2.876 1.494L.755 5.9C.7 5.956.7 5.956.7 6.011c.055.055.11 0 .11-.055h.056c.609-.443 1.66-.83 2.877-.94.11 1.05.387 2.212.83 3.484.442 1.107.94 2.103 1.493 2.933-.774.332-1.383.332-1.715-.056-.442-.498-.442-1.383-.11-2.379-.056-.11-.111-.22-.111-.332-.11-.331-.221-.663-.332-.94-1.438 2.324-1.715 4.426-.664 5.31.83.665 2.213.444 3.707-.552.885.94 1.77 1.604 2.655 1.825h.056c.055 0 .166.056.166-.055.055-.055-.056-.055-.056-.11h-.055c-.72-.277-1.494-1.052-2.268-2.048a13.356 13.356 0 0 0 2.545-2.49c.719-.884 1.327-1.825 1.715-2.765.608.498.94 1.05.774 1.494-.166.663-.94 1.106-1.936 1.272-.056.11-.166.166-.222.277-.22.276-.442.553-.663.774 2.655.11 4.647-.72 4.813-2.102.276-.996-.664-2.102-2.269-2.932Zm-2.268 2.71c-.94 1.162-2.102 2.158-3.153 2.767-.387-.609-.72-1.328-.996-2.047a11.858 11.858 0 0 1-.774-4.15c.719-.055 1.493.056 2.212.166 1.439.222 2.877.775 3.928 1.384-.332.608-.774 1.327-1.217 1.88Z"
+                                                    id="BlizzardGameIcon_svg__a"></path>
+                                            </defs>
+                                            <g fill-rule="nonzero" fill="none">
+                                                <use fill="#3B3B3B" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                                <use fill="#757575" xlink:href="#BlizzardGameIcon_svg__a"></use>
+                                            </g>
+                                        </svg></div>Blizzard<svg width="18" height="18"
+                                        xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI platform">
+                                    <div class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M13.44 0a2.24 2.24 0 0 1 2.24 2.24v11.2a2.24 2.24 0 0 1-2.24 2.24H2.24A2.24 2.24 0 0 1 0 13.44V2.24A2.24 2.24 0 0 1 2.24 0h11.2ZM7 10.5l.49 1.172 3.55.928.16-1.993L7 10.5Zm1.6-7L2.8 6.354l.95 4.146h1.23l-.338-3.026h.338L5.52 10.5h1.202V6.807h.253l.462 3.693h1.567V6.023h.29l.207 4.477h1.816l.582-6.076L8.6 3.5Z"
+                                                    id="RiotGameIcon_svg__a"></path>
+                                            </defs>
+                                            <g transform="translate(0 .5)" fill-rule="nonzero" fill="none">
+                                                <use fill="#3B3B3B" xlink:href="#RiotGameIcon_svg__a"></use>
+                                                <use fill="#757575" xlink:href="#RiotGameIcon_svg__a"></use>
+                                            </g>
+                                        </svg></div>Riot<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                        class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI platform">
+                                    <div class="icon"><svg width="1em" height="1em" viewBox="0 0 16 16"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                                            <defs>
+                                                <path
+                                                    d="M13.247 0a2.408 2.408 0 0 1 2.408 2.408v10.84a2.408 2.408 0 0 1-2.408 2.407H2.408A2.408 2.408 0 0 1 0 13.247V2.408A2.408 2.408 0 0 1 2.408 0h10.84Zm-3.142 2H5.632a1.681 1.681 0 0 0-1.152.447 1.53 1.53 0 0 0-.347.485 1.414 1.414 0 0 0-.126.592v8.441c0 .21.042.406.126.586.084.18.2.34.347.479a1.681 1.681 0 0 0 1.153.447h4.472a1.681 1.681 0 0 0 1.153-.447c.147-.139.262-.298.346-.479.084-.18.126-.376.126-.586v-8.44c0-.21-.042-.408-.126-.593a1.53 1.53 0 0 0-.346-.485A1.681 1.681 0 0 0 10.105 2Zm-2.243 9.7c.185 0 .34.064.467.19a.633.633 0 0 1 .189.466.64.64 0 0 1-.19.46.623.623 0 0 1-.466.195.63.63 0 0 1-.46-.195.63.63 0 0 1-.195-.46c0-.185.065-.34.196-.466a.64.64 0 0 1 .46-.19Zm2.848-7.57v7.218H5.015V4.129h5.695ZM8.669 2.843c.05 0 .096.019.138.057.042.038.063.09.063.157s-.02.12-.063.158a.203.203 0 0 1-.138.056h-1.6a.203.203 0 0 1-.139-.056.201.201 0 0 1-.063-.158c0-.067.023-.12.07-.157a.213.213 0 0 1 .132-.057Z"
+                                                    id="MobileGameIcon_svg__a"></path>
+                                            </defs>
+                                            <g fill-rule="nonzero" fill="none">
+                                                <use fill="#3B3B3B" xlink:href="#MobileGameIcon_svg__a"></use>
+                                                <use fill="#757575" xlink:href="#MobileGameIcon_svg__a"></use>
+                                            </g>
+                                        </svg></div>手机游戏<svg width="18" height="18" xmlns="http://www.w3.org/2000/svg"
+                                        class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="search-styledfilterbox4">
+                        <div class="search-template2__StyledFilterBox-sc-14lkwi9-5 kCxJVE">
+                            <div class="box-title">语言</div>
+                            <div class="tag-box">
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">简体中文<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">繁体中文<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                                <div class="search-template2__StyledFilterTag-sc-14lkwi9-4 duljQI">英文<svg width="18"
+                                        height="18" xmlns="http://www.w3.org/2000/svg" class="checked">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <path d="M0 0h14a4 4 0 0 1 4 4v14L0 0Z" fill="#F1ED62"></path>
+                                            <path
+                                                d="m15.197 2.007 1.118 1.146-5.452 5.321-2.86-2.73L9.11 4.587 10.85 6.25z"
+                                                fill="#272727" fill-rule="nonzero"></path>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 创建底部容器 -->
+        <div id="footer">
+            <div id="about">
+                <p>关于我们</p>
+                <ul>
+                    <li><a href="#">供应商计划</a></li>
+                    <li><a href="#">公司简介</a></li>
+                    <li><a href="#">版本：1.0.1.3</a></li>
+                    <li><a href="#">用户权限</a></li>
+                    <li><a href="#">隐私权限</a></li>
+                    <li><a href="#">客服中心</a></li>
+                    <li><a href="#">举报投诉</a></li>
+                </ul>
+            </div>
+            <div id="community">
+                <p>社区</p>
+                <ul>
+                    <li><a href="#">论坛</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">新闻中心</a></li>
+                    <li><a href="#">游戏中心</a></li>
+                    <li><a href="#">最新游戏</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">兑换礼品</a></li>
+                </ul>
+            </div>
+            <div id="message">
+                <p>更多消息</p>
+                <ul>
+                    <li><a href="#">开发商寻求发布资源</a></li>
+                    <li><a href="#">出版商寻求零售商合作</a></li>
+                    <li><a href="#">广告联盟-up主/游戏主播</a></li>
+                    <li><a href="#">广告联盟-网站论坛/游戏博客</a></li>
+                    <li><a href="#">学生折扣</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./jquery-1.12.3.js"></script>
+    <script src="./游戏中心.js"></script>
+</body>
+
+</html>
